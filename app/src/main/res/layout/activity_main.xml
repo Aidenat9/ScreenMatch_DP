@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="@dimen/dp_125"
+        android:layout_height="@dimen/dp_50"
+        android:text="Hello !"
+        android:layout_gravity="start"
+        android:background="@android:color/holo_green_dark"
+        android:textSize="@dimen/sp_28" />
+    <TextView
+        android:layout_gravity="end"
+        android:layout_width="@dimen/dp_125"
+        android:layout_height="@dimen/dp_50"
+        android:text="Hello !"
+        android:background="@android:color/holo_green_dark"
+        android:textSize="@dimen/sp_28" />
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="@dimen/dp_125"
+        android:layout_height="@dimen/dp_50"
+        android:text="Hello !"
+        android:background="@android:color/holo_green_dark"
+        android:textSize="@dimen/sp_28" />
+
+    <TextView
+        android:layout_width="@dimen/dp_187"
+        android:text="一半宽度，高50dp"
+        android:layout_gravity="start"
+        android:textSize="@dimen/sp_16"
+        android:textColor="#ffffff"
+        android:background="@android:color/holo_red_dark"
+        android:layout_height="@dimen/dp_50"/>
+    <TextView
+        android:layout_width="@dimen/dp_187"
+        android:text="一半宽度，高50dp"
+        android:layout_gravity="end"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp_16"
+        android:background="@android:color/holo_red_dark"
+        android:layout_height="@dimen/dp_50"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"/>
+
+    <TextView
+        android:id="@+id/show_tv"
+        style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_80"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"/>
+    <Button
+        android:id="@+id/get_btn"
+        android:layout_width="@dimen/dp_375"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#3399FF"
+        android:gravity="right|bottom"
+        android:text="测试此按钮的适配(右下角)" />
+</LinearLayout>
